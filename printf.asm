@@ -40,6 +40,7 @@ _start:
 
         call printf                     ; printf("I %s %x %d%%%c%b", "love", 3802, 100, '!', 127)
 
+        add rsp, 8 * 11
         mov rax, 60d
         xor rdi, rdi
         syscall                         ; exit(0);
